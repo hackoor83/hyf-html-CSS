@@ -1,0 +1,169 @@
+
+body{
+background: linear-gradient(silver,navy);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    text-align: center;
+    font-style: italic;
+}
+p{text-align: justify;}
+
+#header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background:linear-gradient(gold, silver);
+    border: groove whitesmoke;    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#header:hover{
+    background:linear-gradient(silver, gold);
+}
+
+@media(min-width: 800px){
+    .container{
+        display: flex;
+        justify-content: space-around;                     
+    }
+
+}
+
+#profileOverview, #personalInfo, #H-photo{
+    box-sizing: content-box;  
+    flex-basis: 30%;    
+    margin-bottom: 10px;
+    border: 5px groove whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#profileOverview{
+    flex:1;
+    order: 1;
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: left;    
+}
+
+#profile-p{
+    padding-left: 20px;
+    text-align: justify;
+}
+
+#personalInfo{    
+    flex:1;
+    order: 2;
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: left;    
+}
+
+#personalInfo:hover{
+    background: linear-gradient(silver, gold);
+}
+
+#profileOverview:hover{
+    background: linear-gradient(silver, gold);
+}
+
+#H-photo{
+    float: right;
+    margin-top: 10px;
+}
+
+#workExperience{    
+    border: 3px groove whitesmoke;;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+#work-edu{
+    display: flex;
+    justify-content: space-around;
+}
+
+#work, #education{
+    box-sizing: content-box;  
+    flex-basis: 30%;    
+    margin-bottom: 10px;
+    border: 5px hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#work:hover{
+    background: linear-gradient(silver, gold);     
+} 
+
+#education:hover{
+    background: linear-gradient(silver, gold);    
+}
+
+#H-photo:hover{
+    
+}
+
+#work{
+    flex:1;    
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: left;     
+}
+
+#education{
+    flex:1;   
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: left;    
+}
+
+@media(min-width: 800px){
+    .container-web{
+        display: flex;
+        justify-content: space-between; 
+        color: wheat;                    
+    }
+
+}
+
+#learningStrategies, #platformsTools{
+    box-sizing: content-box;  
+    flex-basis: 45%;    
+    margin-bottom: 10px;
+    margin-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px groove whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#learningStrategies:hover{
+    background: linear-gradient(silver, gold); 
+    color: black;color: black;
+}
+
+#platformsTools:hover{
+    background: linear-gradient(silver, gold); 
+    color: black;
+}
+
+
+
+
