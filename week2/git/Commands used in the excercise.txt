@@ -1,0 +1,58 @@
+Command Line homework (step 2) by Sam (Hisham):
+
+
+1. create a directory. Enter a directory. Create an empty file named blank.
+	 _______________________________
+	|	mkdir git (ENTER)	|
+	|	cd git (ENTER)		|
+	|	touch blank		|
+	|_______________________________|
+
+2. Then write the content `"Hello"` five times to the file greetings.txt. 
+
+	 _______________________________________________________
+	|	echo "Hello" > greetings.txt  (ENTER)		|
+	|	echo "Hello" >> greetings.txt (ENTER)		|
+	|	echo "Hello" >> greetings.txt (ENTER)		|
+	|	echo "Hello" >> greetings.txt (ENTER)		|
+	|	echo "Hello" >> greetings.txt (ENTER)		|
+	|_______________________________________________________|
+
+   Then copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt.
+	 _______________________________________________________
+	|	cat greetings.txt > 1.txt  (ENTER)		|
+	|	cat greetings.txt > 2.txt (ENTER)		|
+	|	cat greetings.txt > 3.txt (ENTER)		|
+	|	cat greetings.txt > 4.txt (ENTER)		|
+	|	cat greetings.txt > 5.txt (ENTER)		|
+	|_______________________________________________________|				
+
+3. Then write the text "cat" to pets.txt
+   Then append the text "dog" to pets.txt
+   Then append the text "hamster" to pets.txt
+	 _______________________________________________________
+	|	echo "cat" > pets.txt  (ENTER)			|
+	|	echo "dog" >> pets.txt (ENTER)			|
+	|	echo "hamster" >> pets.txt (ENTER)		|
+	|_______________________________________________________|
+
+4. Then write the text "cat" to commands.txt
+   Then append the text "ls" to commands.txt
+   Then append the text "pwd" to commands.txt
+	 _______________________________________________________
+	|	echo "cat" > commands.txt  (ENTER)		|
+	|	echo "ls" >> commands.txt (ENTER)		|
+	|	echo "pwd" >> pets.txt (ENTER)			|
+	|_______________________________________________________|
+
+5. Then find unique strings from these two files pets.txt and commands.txt
+   and store the unique strings in lovelyCommands.txt
+	 _______________________________________________________________________________
+	|	cat pets.txt > lovelycommands.txt  (ENTER)				|
+	|	cat commands.txt >> lovelycommands.txt (ENTER)				|
+	|	cat lovelycommands.txt | sort | uniq > lovelycommands.txt(ENTER)	|
+	|_______________________________________________________________________________|
+
+
+
+
