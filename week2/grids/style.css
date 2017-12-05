@@ -1,0 +1,130 @@
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+#grid-floats{
+    overflow:auto;
+    padding: 2em 2em;
+    width: 100%;
+}
+.grid-item img{
+    width: 60%;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1900px){
+    #grid-floats .grid-item:nth-child(1){
+        width: 44%;        
+    }
+    #grid-floats .grid-item:nth-child(1) img{
+        max-width: 50%;        
+    }
+    #grid-floats .grid-item{
+        border: red solid 3px; 
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 70px;
+        width: 20%;
+        float: left;
+        height: 450px;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 1em 1em;
+        text-align: center;        
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:1024px){
+    #grid-floats .grid-item:nth-child(1){
+        width: 40%;        
+    }
+    #grid-floats .grid-item:nth-child(1) img{
+        max-width: 50%;        
+    }
+    #grid-floats .grid-item:nth-child(2){
+        width: 40%;        
+    }
+    #grid-floats .grid-item:nth-child(2) img{
+        max-width: 50%;        
+    }
+    
+    #grid-floats .grid-item{
+        font-size: -50%;
+        border: green solid 3px; 
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 70px;
+        width: 20%;
+        height: 450px;
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 1em 1em;
+        text-align: center;        
+    }
+       
+}
+@media only screen and (max-width:480px){
+    p{
+        display: none;
+    }
+    #grid-floats .grid-item p:hover{
+        display: inline-block;
+    }
+    
+    #grid-floats .grid-item:nth-child(1){
+        width: 100%;        
+    }
+    #grid-floats .grid-item:nth-child(1) img{
+        max-width: 50%;        
+    }
+        
+    #grid-floats .grid-item{
+        font-size: -5rem;
+        border: green solid 3px; 
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 70px;
+        width: 20%;
+        height: 450px;
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 1em 1em;
+        text-align: center;        
+    }
+       
+}
+
+
+
+
+#grid-flex{
+    overflow:auto;
+    padding: 2em 2em;
+    width: 100%;
+    display: flex;
+    box-sizing: border;
+    flex-wrap: wrap;
+}
+
+#grid-flex .grid-item{
+    border:yellow solid 3px; 
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 70px;
+    width: 20%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding: 1em 1em;
+    text-align: center; 
+    justify-content: flex-start;
+    align-items: flex-start;    
+}
